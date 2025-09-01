@@ -32,13 +32,6 @@ ssh-keygen -t ed25519 -C "ваш_email@пример.com"
 git remote add origin git@github.com:ВАШ_АККАУНТ/first-project.git
 ```
 
-* Создать новую ветку и переключиться на неё:
-
-```bash
-git branch <ветка>
-git checkout -b <ветка>
-```
-
 ---
 
 ## Работа с файлами и рабочей директорией
