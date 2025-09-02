@@ -94,8 +94,17 @@ git checkout HEAD~1         # Перейти на один коммит наза
 * **untracked** — файл не отслеживается Git
 * **staged** — файл добавлен в индекс (`git add`)
 * **modified** — файл изменён, но не добавлен в индекс
-* **committed** — изменения зафиксированы в истории репозитория
+* **committed** — изменения зафиксированы в истории репозитория  
 
+ Жизненный цикл файла в Git:
+
+```mermaid
+flowchart LR
+    A[Untracked] -->|git add| B[Staged]
+    B -->|git commit| C[Committed]
+    C -->|изменение файла| D[Modified]
+    D -->|git add| B
+```
 
 ---
 
